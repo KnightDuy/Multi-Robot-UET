@@ -53,7 +53,7 @@ ComplementaryFilterROS::ComplementaryFilterROS()
 
     // Register publishers:
     // TODO: Check why ros::names::resolve is need here
-    imu_publisher_ = this->create_publisher<ImuMsg>("imu/data_filter", queue_size);
+    imu_publisher_ = this->create_publisher<ImuMsg>("robot1/imu/data_filter", queue_size);
 
     if (publish_debug_topics_)
     {
@@ -77,14 +77,14 @@ ComplementaryFilterROS::ComplementaryFilterROS()
         rclcpp::QosPolicyKind::Reliability,
     }};
 
-    imu_subscriber_.reset(new ImuSubscriber(this, "imu/filtered",
-                                            rmw_qos_profile_default, sub_opts));
+    imu_subscriber_.reset(new ImuSubscriber(this, "robot1/imu/filtered",
+                                            rmw_qos_profile_sensor_data, sub_opts));
 
     // Register magnetic data subscriber.
     if (use_mag_)
     {
         mag_subscriber_.reset(new MagSubscriber(
-            this, "mag/filtered", rmw_qos_profile_default, sub_opts));
+            this, "robot1/mag/filtered", rmw_qos_profile_sensor_data, sub_opts));
 
         sync_.reset(new Synchronizer(SyncPolicy(queue_size), *imu_subscriber_,
                                      *mag_subscriber_));

@@ -40,14 +40,15 @@ def generate_launch_description():
         package='robot_localization',
         executable='ekf_node',
         name='ekf_filter_node',
+        namespace='robot1',
         output='screen',
-        parameters=[[
+        parameters=[
             PathJoinSubstitution([
-                FindPackageShare('my_robot_localization'),  # đổi thành package của bạn
+                FindPackageShare('my_robot_localization'),
                 'config',
                 'ekf.yaml'
             ])
-        ]]
+        ]
     )
 
     # Gộp lại
