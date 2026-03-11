@@ -253,6 +253,7 @@ void ComplementaryFilterROS::publish(ImuMsg::ConstSharedPtr imu_msg_raw)
 
     // Create and publish fitlered IMU message.
     ImuMsg::SharedPtr imu_msg = std::make_shared<ImuMsg>(*imu_msg_raw);
+    imu_msg->header.frame_id = "robot1_imu_link";
     imu_msg->orientation.x = q1;
     imu_msg->orientation.y = q2;
     imu_msg->orientation.z = q3;
@@ -311,12 +312,12 @@ void ComplementaryFilterROS::publish(ImuMsg::ConstSharedPtr imu_msg_raw)
 
         if (reverse_tf_)
         {
-            transform.header.frame_id = imu_msg_raw->header.frame_id;
+            transform.header.frame_id = "robot1_imu_link";
             transform.child_frame_id = fixed_frame_;
             tf_broadcaster_.sendTransform(transform);
         } else
         {
-            transform.child_frame_id = imu_msg_raw->header.frame_id;
+            transform.child_frame_id = "robot1_imu_link";
             transform.header.frame_id = fixed_frame_;
             tf_broadcaster_.sendTransform(transform);
         }

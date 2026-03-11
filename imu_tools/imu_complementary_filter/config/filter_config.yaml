@@ -13,14 +13,14 @@ complementary_filter_gain_node:
     publish_debug_topics: false
 
     qos_overrides:
-      /imu/filtered:
+      robot1/imu/filtered:
         subscription:
           depth: 10
           durability: volatile
           history: keep_last
           reliability: best_effort
 
-      /mag/filtered:
+      robot1/mag/filtered:
         subscription:
           depth: 10
           durability: volatile
