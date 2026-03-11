@@ -40,7 +40,7 @@ def generate_launch_description():
         package='robot_localization',
         executable='ekf_node',
         name='ekf_filter_node',
-        namespace='robot1',
+        namespace='robot2',
         output='screen',
         parameters=[
             PathJoinSubstitution([

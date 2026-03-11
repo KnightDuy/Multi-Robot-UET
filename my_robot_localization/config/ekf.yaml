@@ -8,9 +8,9 @@
     publish_tf: true
 
     map_frame: map
-    odom_frame: robot1_odom
-    base_link_frame: robot1_base_link
-    world_frame: robot1_odom
+    odom_frame: robot2_odom
+    base_link_frame: robot2_base_link
+    world_frame: robot2_odom
 
     odom0: odom
     odom0_config: [
