@@ -1,0 +1,107 @@
+[0.024s] Invoking command in '/home/duy/ros2_ws/src/imu_tools/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/duy/ros2_ws/src/imu_tools/imu_filter_madgwick -DCMAKE_INSTALL_PREFIX=/home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick
+[0.180s] -- The C compiler identification is GNU 13.3.0
+[0.312s] -- The CXX compiler identification is GNU 13.3.0
+[0.350s] -- Detecting C compiler ABI info
+[0.537s] -- Detecting C compiler ABI info - done
+[0.555s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.555s] -- Detecting C compile features
+[0.556s] -- Detecting C compile features - done
+[0.573s] -- Detecting CXX compiler ABI info
+[0.769s] -- Detecting CXX compiler ABI info - done
+[0.784s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.784s] -- Detecting CXX compile features
+[0.785s] -- Detecting CXX compile features - done
+[0.814s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.132s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.438s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.573s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.617s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.668s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.718s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.862s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.868s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.992s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.016s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.040s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.135s] -- Found rclcpp_components: 28.1.12 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[2.186s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.201s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.217s] -- Found tf2_geometry_msgs: 0.36.14 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[2.246s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[2.247s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.247s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.352s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.380s] -- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[2.389s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.391s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.494s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.495s] -- Found Threads: TRUE  
+[2.580s] -- Configuring done (2.5s)
+[2.612s] -- Generating done (0.0s)
+[2.621s] -- Build files have been written to: /home/duy/ros2_ws/src/imu_tools/build/imu_filter_madgwick
+[2.636s] Invoked command in '/home/duy/ros2_ws/src/imu_tools/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/duy/ros2_ws/src/imu_tools/imu_filter_madgwick -DCMAKE_INSTALL_PREFIX=/home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick
+[2.638s] Invoking command in '/home/duy/ros2_ws/src/imu_tools/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/duy/ros2_ws/src/imu_tools/build/imu_filter_madgwick -- -j16 -l16
+[2.702s] [ 35%] [32mBuilding CXX object CMakeFiles/imu_filter_madgwick.dir/src/imu_filter_ros.cpp.o[0m
+[2.702s] [ 35%] [32mBuilding CXX object CMakeFiles/imu_filter_madgwick.dir/src/imu_filter.cpp.o[0m
+[2.702s] [ 35%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.702s] [ 35%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.702s] [ 35%] [32mBuilding CXX object CMakeFiles/imu_filter_madgwick.dir/src/stateless_orientation.cpp.o[0m
+[3.563s] [ 42%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.720s] [ 42%] Built target gtest_main
+[7.395s] [ 50%] [32m[1mLinking CXX static library libgtest.a[0m
+[7.557s] [ 50%] Built target gtest
+[19.531s] [ 57%] [32m[1mLinking CXX shared library libimu_filter_madgwick.so[0m
+[20.562s] [ 57%] Built target imu_filter_madgwick
+[20.595s] [ 78%] [32mBuilding CXX object test/CMakeFiles/madgwick_test.dir/madgwick_test.cpp.o[0m
+[20.595s] [ 78%] [32mBuilding CXX object CMakeFiles/imu_filter_madgwick_node.dir/src/imu_filter_node.cpp.o[0m
+[20.595s] [ 78%] [32mBuilding CXX object test/CMakeFiles/stateless_orientation_test.dir/stateless_orientation_test.cpp.o[0m
+[21.889s] [ 85%] [32m[1mLinking CXX executable madgwick_test[0m
+[21.977s] [ 92%] [32m[1mLinking CXX executable stateless_orientation_test[0m
+[22.806s] [ 92%] Built target madgwick_test
+[22.891s] [ 92%] Built target stateless_orientation_test
+[23.717s] [100%] [32m[1mLinking CXX executable imu_filter_madgwick_node[0m
+[24.017s] [100%] Built target imu_filter_madgwick_node
+[24.029s] Invoked command in '/home/duy/ros2_ws/src/imu_tools/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/duy/ros2_ws/src/imu_tools/build/imu_filter_madgwick -- -j16 -l16
+[24.031s] Invoking command in '/home/duy/ros2_ws/src/imu_tools/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/duy/ros2_ws/src/imu_tools/build/imu_filter_madgwick
+[24.041s] -- Install configuration: ""
+[24.041s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/lib/libimu_filter_madgwick.so
+[24.053s] -- Set non-toolchain portion of runtime path of "/home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/lib/libimu_filter_madgwick.so" to ""
+[24.053s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/include
+[24.053s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/include/imu_filter_madgwick
+[24.054s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/include/imu_filter_madgwick/visibility_control.h
+[24.054s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/include/imu_filter_madgwick/world_frame.h
+[24.054s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/include/imu_filter_madgwick/base_node.hpp
+[24.054s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/include/imu_filter_madgwick/stateless_orientation.h
+[24.054s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/include/imu_filter_madgwick/imu_filter_ros.h
+[24.054s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/include/imu_filter_madgwick/imu_filter.h
+[24.054s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/lib/imu_filter_madgwick/imu_filter_madgwick_node
+[24.054s] -- Set non-toolchain portion of runtime path of "/home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/lib/imu_filter_madgwick/imu_filter_madgwick_node" to ""
+[24.054s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/launch
+[24.054s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/imu_filter_component.launch.py
+[24.055s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/imu_filter.launch.py
+[24.055s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/config
+[24.055s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/config/imu_filter.yaml
+[24.055s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/library_path.sh
+[24.055s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/library_path.dsv
+[24.056s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/ament_index/resource_index/package_run_dependencies/imu_filter_madgwick
+[24.056s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/ament_index/resource_index/parent_prefix_path/imu_filter_madgwick
+[24.056s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/ament_prefix_path.sh
+[24.056s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/ament_prefix_path.dsv
+[24.057s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/path.sh
+[24.057s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/path.dsv
+[24.057s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.bash
+[24.057s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.sh
+[24.057s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.zsh
+[24.057s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.dsv
+[24.058s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/package.dsv
+[24.058s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/ament_index/resource_index/packages/imu_filter_madgwick
+[24.058s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/ament_index/resource_index/rclcpp_components/imu_filter_madgwick
+[24.058s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/export_imu_filter_madgwickExport.cmake
+[24.059s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/export_imu_filter_madgwickExport-noconfig.cmake
+[24.059s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.059s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_libraries-extras.cmake
+[24.059s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_targets-extras.cmake
+[24.060s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/imu_filter_madgwickConfig.cmake
+[24.060s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/imu_filter_madgwickConfig-version.cmake
+[24.060s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/imu_filter_madgwick/share/imu_filter_madgwick/package.xml
+[24.063s] Invoked command in '/home/duy/ros2_ws/src/imu_tools/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/duy/ros2_ws/src/imu_tools/build/imu_filter_madgwick

@@ -1,0 +1,65 @@
+[0.027s] Invoking command in '/home/duy/ros2_ws/src/my_robot_localization/build/my_robot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/src/odom_encoder/install/odom_encoder:/home/duy/ros2_ws/install/odom_encoder:/home/duy/ros2_ws/src/install/ros2_opencv:/home/duy/ros2_ws/src/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/duy/ros2_ws/src/my_robot_localization -DCMAKE_INSTALL_PREFIX=/home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization
+[0.143s] -- The C compiler identification is GNU 13.3.0
+[0.242s] -- The CXX compiler identification is GNU 13.3.0
+[0.275s] -- Detecting C compiler ABI info
+[0.471s] -- Detecting C compiler ABI info - done
+[0.487s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.487s] -- Detecting C compile features
+[0.487s] -- Detecting C compile features - done
+[0.508s] -- Detecting CXX compiler ABI info
+[0.714s] -- Detecting CXX compiler ABI info - done
+[0.729s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.730s] -- Detecting CXX compile features
+[0.730s] -- Detecting CXX compile features - done
+[0.743s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.061s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.345s] -- Found robot_localization: 3.8.3 (/opt/ros/jazzy/share/robot_localization/cmake)
+[1.497s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.545s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.600s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.658s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.013s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.146s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.146s] -- Configured cppcheck include dirs: 
+[2.146s] -- Configured cppcheck exclude dirs and/or files: 
+[2.147s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.147s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.150s] -- Added test 'lint_cmake' to check CMake code style
+[2.151s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.157s] -- Added test 'uncrustify' to check C / C++ code style
+[2.157s] -- Configured uncrustify additional arguments: 
+[2.159s] -- Added test 'xmllint' to check XML markup files
+[2.161s] -- Configuring done (2.1s)
+[2.166s] -- Generating done (0.0s)
+[2.168s] -- Build files have been written to: /home/duy/ros2_ws/src/my_robot_localization/build/my_robot_localization
+[2.178s] Invoked command in '/home/duy/ros2_ws/src/my_robot_localization/build/my_robot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/src/odom_encoder/install/odom_encoder:/home/duy/ros2_ws/install/odom_encoder:/home/duy/ros2_ws/src/install/ros2_opencv:/home/duy/ros2_ws/src/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/duy/ros2_ws/src/my_robot_localization -DCMAKE_INSTALL_PREFIX=/home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization
+[2.179s] Invoking command in '/home/duy/ros2_ws/src/my_robot_localization/build/my_robot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/src/odom_encoder/install/odom_encoder:/home/duy/ros2_ws/install/odom_encoder:/home/duy/ros2_ws/src/install/ros2_opencv:/home/duy/ros2_ws/src/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/duy/ros2_ws/src/my_robot_localization/build/my_robot_localization -- -j16 -l16
+[2.234s] Invoked command in '/home/duy/ros2_ws/src/my_robot_localization/build/my_robot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/src/odom_encoder/install/odom_encoder:/home/duy/ros2_ws/install/odom_encoder:/home/duy/ros2_ws/src/install/ros2_opencv:/home/duy/ros2_ws/src/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/duy/ros2_ws/src/my_robot_localization/build/my_robot_localization -- -j16 -l16
+[2.248s] Invoking command in '/home/duy/ros2_ws/src/my_robot_localization/build/my_robot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/src/odom_encoder/install/odom_encoder:/home/duy/ros2_ws/install/odom_encoder:/home/duy/ros2_ws/src/install/ros2_opencv:/home/duy/ros2_ws/src/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/duy/ros2_ws/src/my_robot_localization/build/my_robot_localization
+[2.258s] -- Install configuration: ""
+[2.258s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch
+[2.258s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch/navigation_launch.py
+[2.259s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch/online_sync_myrobot.launch.py
+[2.259s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch/localization_launch_2.py
+[2.259s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch/imu_filter.launch.py
+[2.259s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch/localization_launch.py
+[2.259s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch/ekf.launch.py
+[2.259s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/config
+[2.259s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/config/mapper_params_online_sync.yaml
+[2.259s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/config/ekf.yaml
+[2.260s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/ament_index/resource_index/package_run_dependencies/my_robot_localization
+[2.260s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/ament_index/resource_index/parent_prefix_path/my_robot_localization
+[2.260s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/environment/ament_prefix_path.sh
+[2.260s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/environment/ament_prefix_path.dsv
+[2.260s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/environment/path.sh
+[2.260s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/environment/path.dsv
+[2.261s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/local_setup.bash
+[2.261s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/local_setup.sh
+[2.261s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/local_setup.zsh
+[2.261s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/local_setup.dsv
+[2.261s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/package.dsv
+[2.261s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/ament_index/resource_index/packages/my_robot_localization
+[2.261s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/cmake/my_robot_localizationConfig.cmake
+[2.261s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/cmake/my_robot_localizationConfig-version.cmake
+[2.262s] -- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/package.xml
+[2.264s] Invoked command in '/home/duy/ros2_ws/src/my_robot_localization/build/my_robot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/src/odom_encoder/install/odom_encoder:/home/duy/ros2_ws/install/odom_encoder:/home/duy/ros2_ws/src/install/ros2_opencv:/home/duy/ros2_ws/src/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/duy/ros2_ws/src/my_robot_localization/build/my_robot_localization

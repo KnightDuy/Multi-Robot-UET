@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot">
+
+  <xacro:arg name="prefix" default="robot1_"/>
+
+  <!-- chỉ include macro -->
+  <xacro:include filename="$(find my_robot_model)/description/inertial_macros.xacro"/>
+  <xacro:include filename="$(find my_robot_model)/description/robot_core.xacro"/>
+  <xacro:include filename="$(find my_robot_model)/description/robot_control.xacro"/>
+  <xacro:include filename="$(find my_robot_model)/description/lidar.xacro"/>
+  <xacro:include filename="$(find my_robot_model)/description/camera.xacro"/>
+  <xacro:include filename="$(find my_robot_model)/description/depth_camera.xacro"/>
+  <xacro:include filename="$(find my_robot_model)/description/imu.xacro"/>
+
+  <!-- ================= INSTANTIATE ROBOT ================= -->
+
+  <xacro:robot_core prefix="$(arg prefix)"/>
+  <xacro:robot_control prefix="$(arg prefix)"/>
+  <xacro:lidar prefix="$(arg prefix)"/>
+  <xacro:camera prefix="$(arg prefix)"/>
+  <xacro:depth_camera prefix="$(arg prefix)"/>
+  <xacro:imu prefix="$(arg prefix)"/>
+</robot>
