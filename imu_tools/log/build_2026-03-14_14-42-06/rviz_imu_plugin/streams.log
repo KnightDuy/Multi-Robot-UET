@@ -1,0 +1,31 @@
+[0.033s] Invoking command in '/home/duy/ros2_ws/src/imu_tools/build/rviz_imu_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/src/odom_encoder/install/odom_encoder:/home/duy/ros2_ws/install/odom_encoder:/home/duy/ros2_ws/src/install/ros2_opencv:/home/duy/ros2_ws/src/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/duy/ros2_ws/src/imu_tools/build/rviz_imu_plugin -- -j16 -l16
+[0.145s] [  0%] Built target rviz_imu_plugin_autogen_timestamp_deps
+[0.226s] [ 10%] Built target rviz_imu_plugin_autogen
+[0.343s] [100%] Built target rviz_imu_plugin
+[0.372s] Invoked command in '/home/duy/ros2_ws/src/imu_tools/build/rviz_imu_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/src/odom_encoder/install/odom_encoder:/home/duy/ros2_ws/install/odom_encoder:/home/duy/ros2_ws/src/install/ros2_opencv:/home/duy/ros2_ws/src/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/duy/ros2_ws/src/imu_tools/build/rviz_imu_plugin -- -j16 -l16
+[0.374s] Invoking command in '/home/duy/ros2_ws/src/imu_tools/build/rviz_imu_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/src/odom_encoder/install/odom_encoder:/home/duy/ros2_ws/install/odom_encoder:/home/duy/ros2_ws/src/install/ros2_opencv:/home/duy/ros2_ws/src/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/duy/ros2_ws/src/imu_tools/build/rviz_imu_plugin
+[0.396s] -- Install configuration: ""
+[0.396s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/plugin_description.xml
+[0.396s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/library_path.sh
+[0.397s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/library_path.dsv
+[0.397s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/lib/librviz_imu_plugin.so
+[0.397s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/ament_index/resource_index/package_run_dependencies/rviz_imu_plugin
+[0.397s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/ament_index/resource_index/parent_prefix_path/rviz_imu_plugin
+[0.397s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/ament_prefix_path.sh
+[0.397s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/ament_prefix_path.dsv
+[0.397s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/path.sh
+[0.397s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/path.dsv
+[0.397s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.bash
+[0.398s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.sh
+[0.398s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.zsh
+[0.398s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.dsv
+[0.398s] -- Installing: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/package.dsv
+[0.398s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/ament_index/resource_index/packages/rviz_imu_plugin
+[0.398s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/ament_index/resource_index/rviz_common__pluginlib__plugin/rviz_imu_plugin
+[0.398s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.399s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_libraries-extras.cmake
+[0.399s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.399s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/rviz_imu_pluginConfig.cmake
+[0.399s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/rviz_imu_pluginConfig-version.cmake
+[0.399s] -- Up-to-date: /home/duy/ros2_ws/src/imu_tools/install/rviz_imu_plugin/share/rviz_imu_plugin/package.xml
+[0.403s] Invoked command in '/home/duy/ros2_ws/src/imu_tools/build/rviz_imu_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/duy/ros2_ws/src/odom_encoder/install/odom_encoder:/home/duy/ros2_ws/install/odom_encoder:/home/duy/ros2_ws/src/install/ros2_opencv:/home/duy/ros2_ws/src/install/odom_encoder:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/duy/ros2_ws/src/imu_tools/build/rviz_imu_plugin

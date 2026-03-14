@@ -1,0 +1,26 @@
+-- Install configuration: ""
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch/navigation_launch.py
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch/online_sync_myrobot.launch.py
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch/localization_launch_2.py
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch/imu_filter.launch.py
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch/localization_launch.py
+-- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/launch/ekf.launch.py
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/config
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/config/mapper_params_online_sync.yaml
+-- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/config/ekf.yaml
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/ament_index/resource_index/package_run_dependencies/my_robot_localization
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/ament_index/resource_index/parent_prefix_path/my_robot_localization
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/environment/ament_prefix_path.sh
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/environment/path.sh
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/environment/path.dsv
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/local_setup.bash
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/local_setup.sh
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/local_setup.zsh
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/local_setup.dsv
+-- Installing: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/package.dsv
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/ament_index/resource_index/packages/my_robot_localization
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/cmake/my_robot_localizationConfig.cmake
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/cmake/my_robot_localizationConfig-version.cmake
+-- Up-to-date: /home/duy/ros2_ws/src/my_robot_localization/install/my_robot_localization/share/my_robot_localization/package.xml

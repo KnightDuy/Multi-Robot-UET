@@ -23,6 +23,9 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "/opt/ros/jazzy\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/duy/ros2_ws/src/my_robot_localization/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/duy/ros2_ws/src/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/duy/ros2_ws/src/odom_encoder/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/duy/ros2_ws/install\local_setup.ps1"
 
 # source this prefix
