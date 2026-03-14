@@ -53,7 +53,7 @@ ComplementaryFilterROS::ComplementaryFilterROS()
 
     // Register publishers:
     // TODO: Check why ros::names::resolve is need here
-    imu_publisher_ = this->create_publisher<ImuMsg>("robot1/imu/data_filter", queue_size);
+    imu_publisher_ = this->create_publisher<ImuMsg>("robot2/imu/data_filter", queue_size);
 
     if (publish_debug_topics_)
     {
@@ -77,14 +77,14 @@ ComplementaryFilterROS::ComplementaryFilterROS()
         rclcpp::QosPolicyKind::Reliability,
     }};
 
-    imu_subscriber_.reset(new ImuSubscriber(this, "robot1/imu/filtered",
+    imu_subscriber_.reset(new ImuSubscriber(this, "robot2/imu/filtered",
                                             rmw_qos_profile_sensor_data, sub_opts));
 
     // Register magnetic data subscriber.
     if (use_mag_)
     {
         mag_subscriber_.reset(new MagSubscriber(
-            this, "robot1/mag/filtered", rmw_qos_profile_sensor_data, sub_opts));
+            this, "robot2/mag/filtered", rmw_qos_profile_sensor_data, sub_opts));
 
         sync_.reset(new Synchronizer(SyncPolicy(queue_size), *imu_subscriber_,
                                      *mag_subscriber_));
@@ -253,7 +253,7 @@ void ComplementaryFilterROS::publish(ImuMsg::ConstSharedPtr imu_msg_raw)
 
     // Create and publish fitlered IMU message.
     ImuMsg::SharedPtr imu_msg = std::make_shared<ImuMsg>(*imu_msg_raw);
-    imu_msg->header.frame_id = "robot1_imu_link";
+    imu_msg->header.frame_id = "robot2_imu_link";
     imu_msg->orientation.x = q1;
     imu_msg->orientation.y = q2;
     imu_msg->orientation.z = q3;
@@ -312,12 +312,12 @@ void ComplementaryFilterROS::publish(ImuMsg::ConstSharedPtr imu_msg_raw)
 
         if (reverse_tf_)
         {
-            transform.header.frame_id = "robot1_imu_link";
+            transform.header.frame_id = "robot2_imu_link";
             transform.child_frame_id = fixed_frame_;
             tf_broadcaster_.sendTransform(transform);
         } else
         {
-            transform.child_frame_id = "robot1_imu_link";
+            transform.child_frame_id = "robot2_imu_link";
             transform.header.frame_id = fixed_frame_;
             tf_broadcaster_.sendTransform(transform);
         }
