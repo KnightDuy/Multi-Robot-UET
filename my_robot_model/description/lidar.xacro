@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- ================= LIDAR MACRO ================= -->
+  <xacro:macro name="lidar" params="prefix">
+
+    <!-- ========= LIDAR JOINT ========= -->
+    <joint name="${prefix}laser_joint" type="fixed">
+      <parent link="${prefix}chassis"/>
+      <child link="${prefix}laser"/>
+      <origin xyz="0.0 0 0.15" rpy="0 0 0"/>
+    </joint>
+
+    <!-- ========= LIDAR LINK ========= -->
+    <link name="${prefix}laser">
+      <visual>
+        <geometry>
+          <cylinder radius="0.035" length="0.04"/>
+        </geometry>
+        <material name="red"/>
+      </visual>
+
+      <collision>
+        <geometry>
+          <cylinder radius="0.035" length="0.04"/>
+        </geometry>
+      </collision>
+
+      <xacro:inertial_cylinder
+        mass="0.125"
+        length="0.04"
+        radius="0.035">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </xacro:inertial_cylinder>
+    </link>
+
+    <!-- ========= GAZEBO LIDAR ========= -->
+    <gazebo reference="${prefix}laser">
+      <sensor name="${prefix}laser" type="gpu_lidar">
+
+        <!-- ⚠️ topic PHẢI prefix -->
+        <topic>${prefix}scan</topic>
+
+        <frame>${prefix}laser</frame>
+        <update_rate>10</update_rate>
+
+        <lidar>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1</resolution>
+              <min_angle>-3.14159</min_angle>
+              <max_angle>3.14159</max_angle>
+            </horizontal>
+          </scan>
+
+          <range>
+            <min>0.12</min>
+            <max>10.0</max>
+            <resolution>0.015</resolution>
+          </range>
+
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </lidar>
+
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+      </sensor>
+    </gazebo>
+
+  </xacro:macro>
+
+</robot>

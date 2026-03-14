@@ -1,0 +1,5 @@
+<library path="nav2_simple_astar_planner">
+  <class type="nav2_simple_astar_planner::SimpleAStarPlanner" base_class_type="nav2_core::GlobalPlanner">
+    <description>Simple A* global planner plugin for Nav2</description>
+  </class>
+</library>
