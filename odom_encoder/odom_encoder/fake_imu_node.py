@@ -16,11 +16,19 @@ class ImuMagFilter(Node):
         self.declare_parameter('alpha', 0.25)
         self.declare_parameter('mag_alpha', 0.25)
         self.declare_parameter('bias_alpha', 0.0003)
+        self.declare_parameter('enable_gyro_bias_estimation', True)
+        self.declare_parameter('gravity_mps2', 9.81)
+        self.declare_parameter('stationary_gyro_threshold', 0.12)
+        self.declare_parameter('stationary_accel_tolerance', 1.2)
 
         self.N = self.get_parameter('window_size').value
         self.alpha = self.get_parameter('alpha').value
         self.mag_alpha = self.get_parameter('mag_alpha').value
         self.bias_alpha = self.get_parameter('bias_alpha').value
+        self.enable_gyro_bias_estimation = self.get_parameter('enable_gyro_bias_estimation').value
+        self.gravity_mps2 = self.get_parameter('gravity_mps2').value
+        self.stationary_gyro_threshold = self.get_parameter('stationary_gyro_threshold').value
+        self.stationary_accel_tolerance = self.get_parameter('stationary_accel_tolerance').value
 
         # Queues for moving average
         self.acc = [deque(maxlen=self.N), deque(maxlen=self.N), deque(maxlen=self.N)]
@@ -57,10 +65,11 @@ class ImuMagFilter(Node):
         return prev + a * (current - prev)
 
     # --- Gyro bias update ---
-    def update_bias(self, idx, raw):
+    def update_bias(self, idx, raw, is_stationary):
         b = self.gyro_bias[idx]
-        b = b + self.bias_alpha * (raw - b)
-        self.gyro_bias[idx] = b
+        if self.enable_gyro_bias_estimation and is_stationary:
+            b = b + self.bias_alpha * (raw - b)
+            self.gyro_bias[idx] = b
         return raw - b
 
     # ========== IMU ==========
@@ -70,6 +79,15 @@ class ImuMagFilter(Node):
 
         ax, ay, az = msg.linear_acceleration.x, msg.linear_acceleration.y, msg.linear_acceleration.z
         gx, gy, gz = msg.angular_velocity.x, msg.angular_velocity.y, msg.angular_velocity.z
+
+        # Detect stationary periods for safe gyro bias learning.
+        # Updating bias while robot is rotating quickly will corrupt angular velocity.
+        gyro_norm = (gx * gx + gy * gy + gz * gz) ** 0.5
+        acc_norm = (ax * ax + ay * ay + az * az) ** 0.5
+        is_stationary = (
+            gyro_norm < self.stationary_gyro_threshold and
+            abs(acc_norm - self.gravity_mps2) < self.stationary_accel_tolerance
+        )
 
         # --- ACC ---
         acc_values = [ax, ay, az]
@@ -84,7 +102,7 @@ class ImuMagFilter(Node):
         # --- GYRO ---
         gyro_raw = [gx, gy, gz]
         for i in range(3):
-            corrected = self.update_bias(i, gyro_raw[i])  # bias remove
+            corrected = self.update_bias(i, gyro_raw[i], is_stationary)
             avg = self.moving_avg(self.gyro[i], corrected)
             self.gyro_prev[i] = self.lpf(self.gyro_prev[i], avg, self.alpha)
 
